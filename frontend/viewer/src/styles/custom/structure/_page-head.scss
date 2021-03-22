@@ -1,0 +1,29 @@
+//
+// page-title.scss
+//
+
+$header-bg: #151a1f;
+$table-text-secondary-color: #91b9cd;
+$large-numbers-color: #6fbde2;
+$page-title-height: 50px;
+.page-title{
+  background-color: $header-bg;
+  height: $page-title-height;
+  line-height: $page-title-height;
+  margin-top: $topbar-height;
+  margin-bottom: 2px;
+  .header {
+    font-size: 22px;
+    font-weight: 300;
+    color: $table-text-secondary-color;
+  }
+  .actions {
+    display: flex;
+  }
+  .study-count {
+    color: $large-numbers-color;
+    font-size: 36px;
+    font-weight: 100;
+    //line-height: $page-title-height;
+  }
+}

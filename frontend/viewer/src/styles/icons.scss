@@ -1,0 +1,56 @@
+// Plugins
+$ionicons-font-path: "~ionicons/dist/fonts";
+//$ionicons-version
+@import "~ionicons/dist/scss/ionicons";
+
+
+
+.icon-xxl {
+  height: 48px !important;
+  width: 48px !important;
+}
+
+.icon-xl {
+  height: 36px !important;
+  width: 36px !important;
+}
+
+.icon-md {
+  height: 24px !important;
+  width: 24px !important;
+}
+
+.icon-sm {
+  height: 12px !important;
+  width: 12px !important;
+}
+
+.icon-sm {
+  height: 12px !important;
+  width: 12px !important;
+}
+
+.icon-red {
+  fill: firebrick !important;
+  fill-opacity: .5 !important;
+}
+
+.icon-green {
+  fill: seagreen !important;
+  fill-opacity: .5 !important;
+}
+
+.icon-blue {
+  fill: dodgerblue !important;
+  fill-opacity: .5 !important;
+}
+
+.icon-yellow {
+  fill: yellow !important;
+  fill-opacity: .5 !important;
+}
+
+.icon-orange {
+  fill: orangered !important;
+  fill-opacity: .5 !important;
+}

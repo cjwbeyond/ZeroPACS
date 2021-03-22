@@ -34,8 +34,9 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles/styles.scss",
-              "src/styles/app.angular.scss"
+              "src/styles/bootstrap.scss",
+              "src/styles/app.scss",
+              "src/styles/icons.scss"
             ],
             "scripts": []
           },
@@ -99,8 +100,9 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles/styles.scss",
-              "src/styles/app.angular.scss"
+              "src/styles/bootstrap.scss",
+              "src/styles/app.scss",
+              "src/styles/icons.scss"
             ],
             "scripts": []
           }

@@ -1,0 +1,85 @@
+//
+// tables.scss
+//
+
+
+//Table centered (Custom)
+.table-centered {
+    td,th {
+        vertical-align: middle !important;
+    }
+}
+
+
+// Custom table components (Custom)
+.table {
+    th {
+        font-weight: $font-weight-bold;
+    }
+    .table-user {
+        img {
+            height: 30px;
+            width: 30px;
+        }
+    }
+    tr.sortable {
+      th {
+        cursor: pointer;
+        span{
+          position: relative;
+          display: inline-block;
+          &::before,&::after{
+            position: absolute;
+            right: -20px;
+            opacity: 0.3;
+            font: 20px/1 "Ionicons";
+          }
+          &::before {
+            content: "";
+            top: 7px;
+          }
+          &::after {
+            content: "";
+            top: 14px;
+          }
+        }
+        &:hover{
+          span{
+            &::before,&::after{
+              opacity: 0.6;
+            }
+          }
+        }
+      }
+
+      .asc {
+        span:before,&:hover {
+          opacity: 1 !important;
+        }
+      }
+
+      .desc {
+        span:after,&:hover {
+          opacity: 1 !important;
+        }
+    }
+  }
+}
+
+.action-icon {
+    color: $gray-600;
+    font-size: 1.2rem;
+    display: inline-block;
+    padding: 0 3px;
+
+    &:hover {
+        color: $gray-700;
+    }
+}
+
+// Tables fluid
+.table-nowrap {
+    th, td {
+      white-space: nowrap;
+    }
+}

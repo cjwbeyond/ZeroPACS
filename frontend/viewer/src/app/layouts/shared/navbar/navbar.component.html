@@ -1,0 +1,68 @@
+<div class="navbar navbar-custom">
+  <div class="container-fluid px-5">
+    <!-- LOGO -->
+    <a routerLink="/" class="navbar-brand mr-0 mr-md-2 logo">
+      <span class="logo-sm text-logo">
+        <img src="assets/images/logo.png" height="30" alt="logo">
+        ZeroPACS
+      </span>
+    </a>
+    <ul class="navbar-nav flex-row ml-auto d-flex list-unstyled topnav-menu float-right mb-0">
+      <li class="dropdown d-none d-lg-block" placement="left" ngbTooltip="Change language" ngbDropdown>
+        <a href="javascript: void(0);" class="nav-link dropdown-toggle mr-0" role="button">
+          <i class="ion-md-globe"></i>
+        </a>
+      </li>
+
+      <li class="dropdown notification-list" placement="left" ngbTooltip="8 new unread notifications" ngbDropdown>
+        <a href="javascript: void(0);" class="nav-link dropdown-toggle" ngbDropdownToggle role="button">
+          <span class="ion-md-notifications-outline"></span>
+        </a>
+      </li>
+
+      <li class="dropdown notification-list" placement="left" ngbTooltip="Settings">
+        <a href="javascript:void(0);" class="nav-link right-bar-toggle" (click)="toggleRightSidebar()">
+          <span class="ion-md-settings"></span>
+        </a>
+      </li>
+
+      <li class="dropdown notification-list align-self-center profile-dropdown" ngbDropdown>
+        <a class="nav-link dropdown-toggle nav-user mr-0" ngbDropdownToggle href="javascript: void(0);" role="button">
+          <div class="media user-profile">
+            <img src="assets/images/users/avatar.png" alt="user-image" class="rounded-circle align-self-center" />
+            <div class="media-body text-left">
+              <h6 class="pro-user-name ml-2 my-0">
+                <span>Shreyu N</span>
+                <span class="pro-user-desc text-muted d-block mt-1">Administrator </span>
+              </h6>
+            </div>
+            <i [attr.data-feather]="'chevron-down'" class="ml-2 align-self-center" ></i>
+          </div>
+        </a>
+        <div class="dropdown-menu profile-dropdown-items dropdown-menu-right" ngbDropdownMenu>
+          <a routerLink="/pages-profile" class="dropdown-item notify-item" ngbDropdownItem>
+            <i [attr.data-feather]="'user'" class="icon-dual icon-xs mr-2" ></i>
+            <span>&nbsp;My Account</span>
+          </a>
+
+          <a href="javascript:void(0);" class="dropdown-item notify-item" ngbDropdownItem>
+            <i [attr.data-feather]="'settings'" class="icon-dual icon-xs mr-2" ></i>
+            <span>&nbsp;Settings</span>
+          </a>
+
+          <a href="javascript:void(0);" class="dropdown-item notify-item" ngbDropdownItem>
+            <i [attr.data-feather]="'help-circle'" class="icon-dual icon-xs mr-2" ></i>
+            <span>&nbsp;Support</span>
+          </a>
+
+          <a href="javascript: void(0);" class="dropdown-item notify-item" ngbDropdownItem>
+            <i [attr.data-feather]="'lock'" class="icon-dual icon-xs mr-2" ></i>
+            <span>&nbsp;Lock Screen</span>
+          </a>
+          <div class="dropdown-divider"></div>
+
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>

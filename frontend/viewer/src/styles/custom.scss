@@ -1,0 +1,27 @@
+#canvas {
+  position: relative;
+}
+
+#canvas .model-node {
+  position: absolute;
+  min-width: 200px;
+}
+
+#canvas .model-node:hover {
+  opacity: 0.6;
+}
+
+#canvas .model-node * {
+  font-size: 0.8rem;
+}
+
+#canvas .model-node h2 {
+  cursor: move;
+  margin: 0 !important;
+}
+
+#canvas .model-default-endpoint {
+  z-index: 6;
+}
+
+

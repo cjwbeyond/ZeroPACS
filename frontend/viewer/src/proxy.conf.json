@@ -1,9 +1,9 @@
 {
-  "/api": {
-    "target": "http://localhost:3000",
+  "/dcm4chee-arc": {
+    "target": "https://server.dcmjs.org",
     "secure": false,
     "pathRewrite": {
-      "^/api": "/api"
+      "^/dcm4chee-arc": "/dcm4chee-arc"
     },
     "changeOrigin": true,
     "logLevel": "debug"

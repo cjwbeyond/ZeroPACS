@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { StudyListComponent } from './components/study-list/study-list.component';
 import { HomeComponent } from './home/home.component';
+import {SharedModule} from "../../shared/shared.module";
 
 
 
@@ -10,8 +11,9 @@ import { HomeComponent } from './home/home.component';
   exports: [
     HomeComponent
   ],
-  imports: [
-    CommonModule
-  ]
+    imports: [
+        CommonModule,
+        SharedModule
+    ]
 })
 export class HomeModule { }
